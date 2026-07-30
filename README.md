@@ -61,3 +61,23 @@ Adicionar ao site quando forem confirmados:
 6. Programação e ordem das bandas
 7. Imagem social em formato 1200 x 630
 8. Legenda do vídeo em `assets/captions/`
+
+## Bandas adicionadas neste lote
+
+- Mitsein, com link oficial do artista no Spotify
+- GhoN, com foto, logo, apresentação e link do álbum no Spotify
+- O Dia D, com foto ao vivo, logo, apresentação, Spotify e Instagram
+
+Os PDFs de portfólio foram usados como referência editorial, mas não foram adicionados ao site público para evitar peso desnecessário no repositório.
+
+### Organização de novas bandas
+
+Crie uma pasta por banda dentro de `assets/images/bandas/`:
+
+```text
+assets/images/bandas/nome-da-banda/
+├── foto-principal.webp
+└── logo.webp
+```
+
+Depois, duplique um `article.band-card` no `index.html` e atualize textos, caminhos e links oficiais.
