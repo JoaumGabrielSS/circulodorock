@@ -1,0 +1,7 @@
+# Arquivos locais
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+__pycache__/
+*.pyc
