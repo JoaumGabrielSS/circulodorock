@@ -23,10 +23,35 @@ required = [
     'id="ingressos"',
     'id="menu-principal"',
     'rel="stylesheet" href="assets/css/styles.css"',
+    "O Dia D",
+    "Mitsein",
+    "A Drink to Death",
+    "Naught Dog",
+    "GhoN",
+    "Walk Again",
+    "Asgard",
+    "instagram.com/banda_odiad_hc",
+    "instagram.com/mitseinofficial",
+    "instagram.com/adrinktodeath",
+    "instagram.com/naughty.dog1",
+    "instagram.com/bandaghon",
+    "instagram.com/_walkagain_",
+    "instagram.com/asgarddf",
 ]
 for item in required:
     if item not in html:
         errors.append(f"Conteúdo obrigatório ausente: {item}")
+
+card_count = html.count('<article class="band-card">')
+if card_count != 7:
+    errors.append(f"Quantidade de cards de banda inválida: {card_count}. Esperado: 7")
+
+spotify_count = html.count('band-link band-link-spotify')
+instagram_count = html.count('band-link band-link-instagram')
+if spotify_count != 7:
+    errors.append(f"Quantidade de links do Spotify inválida: {spotify_count}. Esperado: 7")
+if instagram_count != 7:
+    errors.append(f"Quantidade de links do Instagram inválida: {instagram_count}. Esperado: 7")
 
 if errors:
     print("VALIDAÇÃO FALHOU")
@@ -36,7 +61,9 @@ if errors:
 
 print("VALIDAÇÃO OK")
 print(f"  index.html: {html_path.stat().st_size / 1024:.1f} KiB")
+print("  Bandas confirmadas: 7")
+print("  Links do Spotify: 7")
+print("  Links do Instagram: 7")
 print("  Base64 no HTML: 0")
 print("  Link do Sympla: presente")
-print("  QR Code: presente")
-print("  CSS e JavaScript externos: presentes")
+print("  Arquivos locais referenciados: presentes")
