@@ -47,7 +47,7 @@ O site não processa cadastro, pagamento ou dados pessoais. Portanto, não preci
 1. O Dia D
 2. Mitsein
 3. A Drink to Death
-4. Naught Dog
+4. Naughty Dog
 5. GhoN
 6. Walk Again
 7. Asgard
