@@ -26,7 +26,7 @@ required = [
     "O Dia D",
     "Mitsein",
     "A Drink to Death",
-    "Naught Dog",
+    "Naughty Dog",
     "GhoN",
     "Walk Again",
     "Asgard",
